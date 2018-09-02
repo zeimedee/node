@@ -12,7 +12,7 @@
         function createUser(name, pass) {
     return{
         name: name,
-        pass: name
+        pass: pass
     }
     
 }
@@ -33,10 +33,12 @@ var newsFeed = [{
 var user = prompt("Enter User Name: ");
 var pass = prompt("Enter Password: ");
 
-for( var i = database.length-1;i >= 0;i--){
-    if (database[i].name === user && database[i] === user) {
+for( var i = database.length-1; i >= 0; i--){
+    if (database[i].name === user && database[i].pass === pass) {
         window.speechSynthesis.speak(new SpeechSynthesisUtterance('welcome,' + user + ', we have missed you'));
+        document.write('write this if it works');
         
+        break;
     }
 }
         
