@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        function createUser(name, pass) {
+    return{
+        name: name,
+        pass: name
+    }
+    
+}
+
+var database = [];
+this.database.push(createUser("osei", "pass"));
+this.database.push(createUser("alex", "pass2"));
+this.database.push(createUser("calx", "pass3"));
+
+var newsFeed = [{
+    name: 'osei',
+    post: 'the boy is going to school!!'
+},{
+    name: 'alex',
+    post: 'haha you blast'
+}]
+
+var user = prompt("Enter User Name: ");
+var pass = prompt("Enter Password: ");
+
+for( var i = database.length-1;i >= 0;i--){
+    if (database[i].name === user && database[i] === user) {
+        window.speechSynthesis.speak(new SpeechSynthesisUtterance('welcome,' + user + ', we have missed you'));
+        
+    }
+}
+        
+        </script>
+</body>
+</html>
