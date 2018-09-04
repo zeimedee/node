@@ -8,20 +8,17 @@
 </head>
 <body>
     <script>
-        var user = {
-            username:"alex",
-            password: "123"
-        };
+        
         var database = [{
             username:"alex",
             password:"123"
-        }]
+        }];
 
         var newsfeed = [
             {
                 user: "alex",
                 timeline: " new here"
-            },
+            },  
             {
                 user: "osei",
                 timeline: "new here too"
@@ -31,6 +28,18 @@
                 timeline: "new here three"
             }
         ]
+
+        var usernamePrompt = prompt('enter username:');
+        var passwordPrompt = prompt('enter password:');
+    function signIn(user, pass){
+        if(user === database[0].username && pass === database[0].password){
+                document.write('welcome ' + user);
+        }else{
+            alert('wrong username and password');
+        }
+    }
+
+signIn(usernamePrompt, passwordPrompt);
         
         </script>
 </body>
