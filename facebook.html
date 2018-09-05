@@ -12,7 +12,17 @@
         var database = [{
             username:"alex",
             password:"123"
-        }];
+        },
+        {
+            username:"osei",
+            password: "1234"
+        },
+        {
+            username:"lex",
+            password: "lols"
+        }
+
+        ];
 
         var newsfeed = [
             {
@@ -33,15 +43,30 @@
             }
         ]
 
-        var usernamePrompt = prompt('enter username:');
-        var passwordPrompt = prompt('enter password:');
-    function signIn(user, pass){
-        if(user === database[0].username && pass === database[0].password){
-                document.write('welcome ' + user);
-        }else{
-            alert('wrong username and password');
+        
+        function isUserValid(username, password){
+                for(var i=0; i < database.length; i++){
+                        if(database[i].username === username && database[i].password === password){
+                            return true;
+                        } else{
+                                false;
+                        }
+                       
+                    } 
         }
+
+        
+    function signIn(user, pass){
+       if(isUserValid(user, pass)){
+           document.write('welcome '+ user );
+       }else{
+           document.write('wrong username and password');
+       }
     }
+
+var usernamePrompt = prompt('enter username:');
+var passwordPrompt = prompt('enter password:');
+
 
 signIn(usernamePrompt, passwordPrompt);
         
