@@ -1,6 +1,8 @@
 var play = 2;
-play = 2 ? "true" : "not true";
+play = 1 ? "true" : "not true";
+console.log(play);
+
 const add = (a,b) => a+b;
-add(2,4);
+
 
 
