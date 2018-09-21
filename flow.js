@@ -1,8 +1,8 @@
 var play = 2;
-play = 1 ? "true" : "not true";
-console.log(play);
+ var time = play < 1 ? "true" : "not true";
+console.log(time);
 
-const add = (a,b) => a+b;
+//const add = (a,b) => a+b;
 
 
 
