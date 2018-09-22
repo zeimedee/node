@@ -42,7 +42,7 @@ class Player {
 
 class Wizard extends Player{
     constructor(name, type){
-        super(name, type)
+        super(name, type);
     }
     play(){
         console.log(`weeeeeeee i am a ${this.type}`);
